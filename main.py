@@ -1,5 +1,3 @@
-#pode aceitar quantos 'a' tiver, depois dois 'b' e 1. terminar ou 2. pegar um 'c' e pegar um 'b'
-
 while(True):
     print("-------------------")
     entrada = input("Entrada: ")
@@ -12,19 +10,19 @@ while(True):
 
     for i in range(quantidade_caracteres):
         if(entrada[i] == 'b' and condicao_0 == True and condicao_1 == True and condicao_2 == True and ocorrencias_1 == 2): # 3
-            print("3")
+            #print("3")
             if(i == (quantidade_caracteres-1)):
                 print("Aceita#3")
             condicao_2 = False
 
         elif(entrada[i] == 'c' and condicao_0 == True and condicao_1 == True and condicao_2 == False and ocorrencias_1 == 2): # 2
-            print("2")
+            #print("2")
             if(i == (quantidade_caracteres-1)):
                 print("Rejeita#2")
             condicao_2 = True
 
         elif(entrada[i] == 'b' and condicao_0 == True and condicao_1 == False): # 1
-            print("1")
+            #print("1")
             
             ocorrencias_1 += 1
             
@@ -44,4 +42,3 @@ while(True):
         else:
             print("Rejeita#e")
             break
-    
