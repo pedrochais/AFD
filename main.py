@@ -8,8 +8,6 @@ while(True):
     condicao_3 = False
     ocorrencias_1 = 0
 
-    
-
     for i in range(quantidade_caracteres):
         #print(entrada[i])
 
@@ -26,7 +24,7 @@ while(True):
             condicao_2 = True
 
         elif(entrada[i] == 'b' and condicao_1 == False): # 1
-            print("1")
+            #print("1")
             condicao_0 = True # Não pode mais entrar na condicao_0
             
             ocorrencias_1 += 1
